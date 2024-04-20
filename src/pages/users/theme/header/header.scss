@@ -1,0 +1,52 @@
+
+.toggle-button {
+    justify-self: start;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+    font-size: 20px; /* Điều chỉnh kích thước phù hợp */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .menu-container {
+    position: relative;
+    width: 100%;
+    height: 60px;
+   background-color: #00224D;
+   color: #fff;
+  }
+  
+  .menu {
+    margin-top: 60px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 10%; 
+    background-color: #00224D;
+    color: #fff;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    
+    
+    
+    &.closed {
+      width: 0; 
+      overflow: hidden;
+      opacity: 0;
+    }
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    li {
+      padding: 5px 0;
+      
+    }
+  }
